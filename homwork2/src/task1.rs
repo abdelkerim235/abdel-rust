@@ -8,15 +8,25 @@
 
 
 
-while let Some(line) = lines.next() {
-    if line.contains(search_term) {
-        return format!("Found term '{}' on line {}", search_term, line_number);
-    }
+const SEARCH_TERM: &str = "picture";
+const QUOTE: &str = "Every face, every shop, bedroom window, public-house, and
+dark square is a picture feverishly turned--in search of what?
+It is the same with books. What do we seek through millions of pages?";
 
-    line_number += 1;
+fn main() {
+    let result = find_term(SEARCH_TERM, QUOTE);
+    println!("{}", result);
 }
 
-format!("Term '{}' not found in quote", search_term)
+fn find_term(search_term: &str, quote: &str) -> String {
+    let lines: Vec<&str> = quote.lines().collect();
+    for (index, line) in lines.iter().enumerate() {
+        if line.contains(search_term) {
+            return format!("{}: {}", index + 1, line.trim());
+        }
+    }
+    String::new()
+}
 
 
 // ----> TESTS

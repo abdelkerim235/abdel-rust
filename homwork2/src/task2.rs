@@ -26,7 +26,7 @@ impl Rect {
 
     fn bottom_right(&self) -> (f32, f32) {
         let bottom_right_x = self.top_left.0 + self.width;
-        let bottom_right_y = self.top_left.1 - self.width;
+        let bottom_right_y = self.top_left.1 + self.width;
         (bottom_right_x, bottom_right_y)
     }
 
@@ -35,7 +35,7 @@ impl Rect {
     }
 
     fn perimeter(&self) -> f32 {
-        self.width * 4.0
+        4.0 * self.width
     }
 }
 
