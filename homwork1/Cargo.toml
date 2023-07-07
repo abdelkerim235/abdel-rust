@@ -5,4 +5,20 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "fonctions"
+path = "src/fonctions.rs"
+
+[[bin]]
+name = "if"
+path = "src/if.rs"
+
+[[bin]]
+name ="primitives"
+path ="src/primitives.rs"
+
+[[bin]]
+name ="variables"
+path ="src/variables.rs"
+
 [dependencies]
