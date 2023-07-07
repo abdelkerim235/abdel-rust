@@ -17,7 +17,7 @@ while let Some(line) = lines.next() {
 }
 
 format!("Term '{}' not found in quote", search_term)
-}
+
 
 // ----> TESTS
 #[cfg(test)]
