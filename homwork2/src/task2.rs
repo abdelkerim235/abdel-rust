@@ -9,30 +9,28 @@
 
  */
 
-fn main() {}
 
-struct Rect {
-    // TODO
+
+[test]
+fn bottom_right() {
+    let rect = Rect::new((1., 2.), 5.);
+
+    assert_eq!((6., 7.), rect.bottom_right())
 }
 
-impl Rect {
-    fn new(top_left: (f32, f32), width: f32) -> Self {
-        todo!()
-    }
+#[test]
+fn area() {
+    let rect = Rect::new((1., 2.), 5.);
 
-    fn bottom_right(&self) -> (f32, f32) {
-        todo!()
-    }
-
-    fn area(&self) -> f32 {
-        todo!()
-    }
-
-    fn perimeter(&self) -> f32 {
-        todo!()
-    }
+    assert_eq!(25., rect.area())
 }
 
+#[test]
+fn perimeter() {
+    let rect = Rect::new((1., 2.), 5.);
+
+    assert_eq!(20., rect.perimeter())
+}
 
 // ----> TESTS
 #[cfg(test)]
