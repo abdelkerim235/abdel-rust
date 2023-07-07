@@ -27,11 +27,6 @@ fn find_term(search_term: &str, quote: &str) -> String {
 }
 
 
-
-
-
-
-
 // ----> TESTS
 #[cfg(test)]
 mod tests {
