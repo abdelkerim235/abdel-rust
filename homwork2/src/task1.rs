@@ -6,6 +6,8 @@
 
  */
 
+
+
 while let Some(line) = lines.next() {
     if line.contains(search_term) {
         return format!("Found term '{}' on line {}", search_term, line_number);
