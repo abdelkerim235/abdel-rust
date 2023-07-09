@@ -1,6 +1,6 @@
 // Create a new instance of Parserpub fn new(expr: &'a str) ->
 
-# pub fn new(expr: &'a str) -> Result<Self, ParseError> {
+# fn new(expr: &'a str) -> Result<Self, ParseError> {
     let mut lexer = Tokenizer::new(expr);
     let cur_token = match lexer.next() {
         Some(token) => token,
