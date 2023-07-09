@@ -1,6 +1,8 @@
 // Construct AST node for numbers, taking into account
 // negative prefixes while handling parenthesis
-fn parse_number(&mut self) -> Result<Node, ParseError> {
+
+
+# fn parse_number(&mut self) -> Result<Node, ParseError> {
     let token = self.current_token.clone();
     match token {
         Token::Subtract => {
