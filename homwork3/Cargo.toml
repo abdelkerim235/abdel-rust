@@ -1,24 +1,11 @@
 [package]
-name = "homwork1"
+name = "homwork3"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [[bin]]
-name = "book"
-path = "src/book.rs"
-
-[[bin]]
-name = "book2"
-path = "src/book2.rs"
-
-[[bin]]
-name = "book3"
-path = "src/book3.rs"
+name ="hashmat"
+path ="src/hashmat.rs"
 
 [dependencies]
-rand = "0.8.5"
-
-
-
